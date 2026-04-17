@@ -8,7 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     if: contains(github.event.pull_request.labels.*.name, 'stage')
-
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
